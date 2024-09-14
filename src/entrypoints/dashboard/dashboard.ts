@@ -1,5 +1,5 @@
-import '../app.css';
-import Dashboard from "@/entrypoints/dashboard/Dashboard.svelte";
+import '../../app.css';
+import Dashboard from "./Dashboard.svelte";
 import { mount } from "svelte";
 
 mount(Dashboard, {

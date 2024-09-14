@@ -1,0 +1,4 @@
+@layer theme, base, presets, components, utilities;
+
+@import "tailwindcss";
+@source "../../src/**/*.{html,js,svelte,ts,tsx}";

@@ -1,6 +1,7 @@
 import { defineConfig } from 'wxt';
 import wasm from "vite-plugin-wasm";
 import topLevelAwait from "vite-plugin-top-level-await";
+import tailwindcss from '@tailwindcss/vite';
 
 // See https://wxt.dev/api/config.html
 export default defineConfig({
@@ -12,17 +13,27 @@ export default defineConfig({
     permissions: ["storage"],
     web_accessible_resources: [
       {
-        resources: ["dashboard.html"],
+        resources: ["dashboard.html", "test.html"],
         matches: ["*://*/*"]
       }
-    ]
+    ],
+    // entrypoints: {
+    //   // Existing entry points
+    //   background: 'src/entrypoints/background.ts',
+    //   popup: 'src/entrypoints/popup/popup.ts',
+    //   dashboard: 'src/entrypoints/dashboard/dashboard.ts',
+    //   // Updated content script entry point
+    //   content: 'src/entrypoints/content/content.ts'
+    // },
   },
   vite: () => ({
     plugins: [
+      tailwindcss(),
       wasm(),
       topLevelAwait()
     ],
   }),
+
   runner: {
     startUrls: ['https://www.google.com']
   }
