@@ -21,3 +21,10 @@ This template provides a solid foundation for developing browser extensions:
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+## Thanks!
+
+Special thanks to [@wilkerlucio](https://github.com/wilkerlucio) for the [original svelte 5 work](https://github.com/wilkerlucio/media-looper).
+
+- [YouTube Looper Code](https://github.com/wilkerlucio/media-looper)
+- [YouTube Looper Extension](https://chrome.google.com/webstore/detail/youtube-looper/bidjeabmcpopfddfcnpniceojmkklcje?hl=en-US&utm_source=chrome-ntp-launcher)
