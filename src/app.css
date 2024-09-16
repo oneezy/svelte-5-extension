@@ -1,4 +1,11 @@
-@layer theme, base, presets, components, utilities;
-
 @import "tailwindcss";
-@source "../../src/**/*.{html,js,svelte,ts,tsx}";
+@source "**/*.{html,js,svelte,ts,tsx}";
+@plugin "@tailwindcss/typography";
+@theme {
+  --color-neon-pink: #f535aa;
+  --color-neon-blue: #05d9ff;
+}
+
+/* * {
+  @apply bg-neon-blue;
+} */

@@ -22,8 +22,14 @@ importers:
         version: 0.15.2(svelte@5.0.0-next.245)
     devDependencies:
       '@sveltejs/vite-plugin-svelte':
-        specifier: 4.0.0-next.7
+        specifier: ^4.0.0-next
         version: 4.0.0-next.7(svelte@5.0.0-next.245)(vite@5.4.5(@types/node@22.5.5)(lightningcss@1.27.0))
+      '@tailwindcss/forms':
+        specifier: ^0.5.9
+        version: 0.5.9(tailwindcss@4.0.0-alpha.24)
+      '@tailwindcss/typography':
+        specifier: ^0.5.15
+        version: 0.5.15(tailwindcss@4.0.0-alpha.24)
       '@tailwindcss/vite':
         specifier: 4.0.0-alpha.24
         version: 4.0.0-alpha.24(vite@5.4.5(@types/node@22.5.5)(lightningcss@1.27.0))
@@ -676,6 +682,11 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
+  '@tailwindcss/forms@0.5.9':
+    resolution: {integrity: sha512-tM4XVr2+UVTxXJzey9Twx48c1gcxFStqn1pQz0tRsX8o3DvxhN5oY5pvyAbUx7VTaZxpej4Zzvc6h+1RJBzpIg==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || >= 3.0.0-alpha.1 || >= 4.0.0-alpha.20'
+
   '@tailwindcss/node@4.0.0-alpha.24':
     resolution: {integrity: sha512-oDQRe/FtkqPCviVdyp0LEdu6sHj5iIQygjlmFpKmZe17BKOTymEwEafomZvf/sZNhhsFgXoEU7qHc9ABxSucJw==}
 
@@ -742,6 +753,11 @@ packages:
   '@tailwindcss/oxide@4.0.0-alpha.24':
     resolution: {integrity: sha512-Q4SMbWdRKLPAGkbSmqh2k3qIT8DmYFxui1iwBfd3jzrIaKGw1ks7vbo5HDy0YPqA8yxDjiaXtOGeAegj1Obrkw==}
     engines: {node: '>= 10'}
+
+  '@tailwindcss/typography@0.5.15':
+    resolution: {integrity: sha512-AqhlCXl+8grUz8uqExv5OTtgpjuVIwFTSXTrh8y9/pw6q2ek7fJ+Y8ZEVw7EB2DCcuCOtEjf9w3+J3rzts01uA==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders || >=4.0.0-alpha.20'
 
   '@tailwindcss/vite@4.0.0-alpha.24':
     resolution: {integrity: sha512-XhOIyV93if3DeRBa2IeTXjaFCrY/JRFDJ6SIcwgELpfuZBunTICd8TWe/22I0abKd208yfX9sWEismGrY47iwA==}
@@ -1825,6 +1841,12 @@ packages:
   lodash.camelcase@4.3.0:
     resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
+  lodash.castarray@4.4.0:
+    resolution: {integrity: sha512-aVx8ztPv7/2ULbArGJ2Y42bG1mEQ5mGjpdvrbJcJFU3TbYybe+QlLS4pst9zV52ymy2in1KpFPiZnAOATxD4+Q==}
+
+  lodash.isplainobject@4.0.6:
+    resolution: {integrity: sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA==}
+
   lodash.kebabcase@4.1.1:
     resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
 
@@ -1896,6 +1918,10 @@ packages:
   min-indent@1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
     engines: {node: '>=4'}
+
+  mini-svg-data-uri@1.4.4:
+    resolution: {integrity: sha512-r9deDe9p5FJUPZAk3A59wGH7Ii9YrjjWw0jmw/liSbHl2CHiyXj6FcDXDu2K3TjVAXqiJdaw3xxwlZZr9E6nHg==}
+    hasBin: true
 
   minimatch@10.0.1:
     resolution: {integrity: sha512-ethXTt3SGGR+95gudmqJ1eNhRO7eGEGIgYA9vnPatK4/etz2MEVDno5GMCibdMTuBMyElzIlgxMna3K94XDIDQ==}
@@ -2148,6 +2174,10 @@ packages:
     engines: {node: ^12 || ^14 || >= 16}
     peerDependencies:
       postcss: ^8.4.21
+
+  postcss-selector-parser@6.0.10:
+    resolution: {integrity: sha512-IQ7TZdoaqbT+LCpShg46jnZVlhWD2w6iQYAcYXfHARZ7X1t/UGhhceQDs5X0cGqKvYlHNOuv7Oa1xmb0oQuA3w==}
+    engines: {node: '>=4'}
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
@@ -3309,6 +3339,11 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
+  '@tailwindcss/forms@0.5.9(tailwindcss@4.0.0-alpha.24)':
+    dependencies:
+      mini-svg-data-uri: 1.4.4
+      tailwindcss: 4.0.0-alpha.24
+
   '@tailwindcss/node@4.0.0-alpha.24':
     dependencies:
       jiti: 2.0.0-beta.3
@@ -3355,6 +3390,14 @@ snapshots:
       '@tailwindcss/oxide-linux-x64-gnu': 4.0.0-alpha.24
       '@tailwindcss/oxide-linux-x64-musl': 4.0.0-alpha.24
       '@tailwindcss/oxide-win32-x64-msvc': 4.0.0-alpha.24
+
+  '@tailwindcss/typography@0.5.15(tailwindcss@4.0.0-alpha.24)':
+    dependencies:
+      lodash.castarray: 4.4.0
+      lodash.isplainobject: 4.0.6
+      lodash.merge: 4.6.2
+      postcss-selector-parser: 6.0.10
+      tailwindcss: 4.0.0-alpha.24
 
   '@tailwindcss/vite@4.0.0-alpha.24(vite@5.4.5(@types/node@22.5.5)(lightningcss@1.27.0))':
     dependencies:
@@ -4436,6 +4479,10 @@ snapshots:
 
   lodash.camelcase@4.3.0: {}
 
+  lodash.castarray@4.4.0: {}
+
+  lodash.isplainobject@4.0.6: {}
+
   lodash.kebabcase@4.1.1: {}
 
   lodash.merge@4.6.2: {}
@@ -4496,6 +4543,8 @@ snapshots:
   mimic-response@4.0.0: {}
 
   min-indent@1.0.1: {}
+
+  mini-svg-data-uri@1.4.4: {}
 
   minimatch@10.0.1:
     dependencies:
@@ -4756,6 +4805,11 @@ snapshots:
     dependencies:
       camelcase-css: 2.0.1
       postcss: 8.4.45
+
+  postcss-selector-parser@6.0.10:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
 
   postcss-value-parser@4.2.0: {}
 

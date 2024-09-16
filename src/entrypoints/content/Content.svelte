@@ -1,10 +1,9 @@
 <script lang="ts">
-  import '../../app.css';
-  import Counter from '../../lib/components/Counter.svelte';
+  import Counter from '@/lib/components/Counter.svelte';
 </script>
 
-<div class="bg-red-500 text-white">
+<div class="bg-neon-pink text-white">
   Content!
 </div>
 
-<Counter />
+<Counter class="bg-neon-pink" />

@@ -7,6 +7,6 @@
 	}
 </script>
 
-<button {...props} class="bg-blue-500 text-white {props.class}" onclick={increment}>
+<button {...props} class="{props.class}" onclick={increment}>
 	clicks: {count}
 </button>

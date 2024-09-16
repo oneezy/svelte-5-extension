@@ -1,4 +1,4 @@
-import '../app.css';
+import '@/app.css';
 import Content from "@/entrypoints/content/Content.svelte";
 import { mount } from "svelte";
 

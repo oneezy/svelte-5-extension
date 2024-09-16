@@ -13,7 +13,7 @@ export default defineConfig({
     permissions: ["storage"],
     web_accessible_resources: [
       {
-        resources: ["dashboard.html", "test.html"],
+        resources: ["dashboard.html"],
         matches: ["*://*/*"]
       }
     ],
