@@ -1,8 +1,17 @@
 {
-  "name": "svelte-5-extension-template",
+  "name": "svelte-5-extension",
   "description": "A starter template for building browser extensions with Svelte 5",
   "private": true,
   "version": "0.0.1",
+  "keywords": [
+    "wxt",
+    "svelte",
+    "svelte-5",
+    "browser-extension",
+    "chrome-extension",
+    "firefox-extension",
+    "extension"
+  ],
   "scripts": {
     "dev": "wxt",
     "dev:firefox": "wxt -b firefox",
