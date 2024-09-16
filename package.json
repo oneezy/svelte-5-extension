@@ -1,6 +1,6 @@
 {
-  "name": "wxt-svelte-starter",
-  "description": "manifest.json description",
+  "name": "svelte-5-extension-template",
+  "description": "A starter template for building browser extensions with Svelte 5",
   "private": true,
   "version": "0.0.1",
   "scripts": {

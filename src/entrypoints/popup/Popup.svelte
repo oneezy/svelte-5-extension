@@ -9,4 +9,10 @@
   <section class="flex flex-col gap-2">
     <a href="{dashboardUrl}" target="_blank">Open Dashboard</a>
   </section>
+
+  <!-- create a form to submit a message to the background script -->
+  <form class="flex flex-col gap-2">
+    <input type="text" name="message" placeholder="Message" />
+    <button type="submit">Submit</button>
+  </form>
 </main>

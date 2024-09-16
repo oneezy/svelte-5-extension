@@ -28,9 +28,9 @@ export default defineConfig({
   },
   vite: () => ({
     plugins: [
-      tailwindcss(),
       wasm(),
-      topLevelAwait()
+      topLevelAwait(),
+      tailwindcss()
     ],
   }),
 

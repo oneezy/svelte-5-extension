@@ -1,11 +1,17 @@
 @import "tailwindcss";
 @source "**/*.{html,js,svelte,ts,tsx}";
 @plugin "@tailwindcss/typography";
+@plugin "@tailwindcss/forms";
+
 @theme {
   --color-neon-pink: #f535aa;
   --color-neon-blue: #05d9ff;
 }
 
-/* * {
-  @apply bg-neon-blue;
-} */
+/* Base
+*************************************************/
+@layer base {
+  /* * {
+    @apply outline-neon-pink outline-3 border-neon-blue border-4;
+  } */
+}
