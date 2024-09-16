@@ -1,6 +1,6 @@
 {
   "name": "svelte-5-extension",
-  "description": "A starter template for building browser extensions with Svelte 5",
+  "description": "A starter template for building browser extensions with Svelte 5, Tailwind 4, and WXT",
   "private": true,
   "version": "0.0.1",
   "keywords": [
@@ -26,7 +26,6 @@
     "clean": "git clean -fXd"
   },
   "dependencies": {
-    "@oneezy/ui": "2.0.0-next.37",
     "mode-watcher": "^0.3.1",
     "runed": "^0.15.2"
   },
