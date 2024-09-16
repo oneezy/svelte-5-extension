@@ -2,8 +2,8 @@
   import Counter from '@/lib/components/Counter.svelte';
 </script>
 
-<div class="bg-neon-pink text-white">
-  Content!
-</div>
+<!-- Neon Pink (working) -->
+<div class="bg-neon-pink">Content!</div>
 
+<!-- Neon Pink (broke) -->
 <Counter class="bg-neon-pink" />

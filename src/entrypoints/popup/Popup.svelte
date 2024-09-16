@@ -5,7 +5,10 @@
 
 <main class="p-4 min-w-[300px] min-h-[300px] grid grid-rows-[auto_1fr] gap-4">
   <h1 class="text-3xl font-bold">Popup</h1>
-  <Counter class="bg-blue-500" />
+  
+  <!-- Neon Pink (broke) -->
+  <Counter class="bg-neon-pink" />
+
   <section class="flex flex-col gap-2">
     <a href="{dashboardUrl}" target="_blank">Open Dashboard</a>
   </section>
